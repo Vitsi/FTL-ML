@@ -6,7 +6,7 @@ from PIL import Image
 
 app = Flask(__name__)
 
-# Dataset Path (Replace with actual path)
+# Dataset Path
 DATASET_PATH = "dataset/"
 
 # Waste category recommendations
@@ -55,7 +55,7 @@ def classify_waste(image_path):
     for category, sample_path in sample_images.items():
         sample_img = cv2.imread(sample_path)
         if sample_img is None:
-            continue  # Skip if sample image is not found
+            continue 
         
         sample_resized = cv2.resize(sample_img, (256, 256))  # Resize sample to match input image
         sample_hsv = cv2.cvtColor(sample_resized, cv2.COLOR_BGR2HSV)
