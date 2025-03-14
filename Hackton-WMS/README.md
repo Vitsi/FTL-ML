@@ -76,6 +76,7 @@ Each waste type has a predefined recommendation, e.g.:
 - Improve classification accuracy with a **machine learning model**.
 - Expand dataset for better recognition.
 - Integrate a database for the uploaded images.
+- Add Additonal Features.
 - Add support for **Video Recognition**.
 
 ---
